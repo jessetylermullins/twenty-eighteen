@@ -1,0 +1,509 @@
+/* ---Responsive mobile-first styling for 2018 Portfolio--- */
+
+/* FONT IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Lato:300" rel="stylesheet');
+
+@import url('https://use.fontawesome.com/releases/v5.0.1/css/all.css');
+
+/* /FONT IMPORTS */
+
+
+/* GLOBAL STYLES */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 100%;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 200;
+      font-size: 1em;
+      color: gray;
+      line-height: 1.75em;
+  }
+
+/* /GLOBAL STYLES */
+
+/* TYPOGRAPHY */
+
+h1, h2, h4 {
+  font-family: 'Bitter', serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.25em;
+  line-height: 1.333em;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1em;
+  text-align: center;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.333em;
+}
+
+
+/* PAGE STRUCTURE */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  box-shadow: 1px 1px 1px darkgrey;
+  z-index: 100;
+}
+
+nav > .brandmark-wrapper {
+  line-height: 0em;
+}
+
+nav > .brandmark-wrapper > a > img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.fa-ellipsis-v {
+  color: darkgrey;
+  transition: 300ms ease all;
+}
+
+.fa-ellipsis-v:hover,
+.fa-ellipsis-v:active {
+  color: grey;
+}
+
+nav > .nav-menu {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  right: 0;
+  transition: 300ms ease all;
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 1px darkgrey;
+  justify-content: center;
+}
+
+nav > .nav-menu > ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0px;
+  width: 100%;
+}
+
+nav > .nav-menu > ul > li {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  align-content: center; 
+  justify-content: center;
+  width: 50%;
+  background-color: lightgrey;
+  border: 1px solid white;
+}
+
+nav > .nav-menu > ul > li > a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 32px;
+  line-height: 1.5em;
+  transition: 300ms ease all;
+}
+
+nav > .nav-menu > ul > li > a:hover,
+nav > .nav-menu > ul > li > a:active,
+nav > .nav-menu > ul > li > a:focus {
+  background-color: darkgrey;
+  color: white;
+}
+
+nav > .nav-menu > ul > li:hover,
+nav > .nav-menu > ul > li:active, {
+  background-color: darkgrey;
+  color: white;
+  text-decoration: none;
+}
+
+.menuUp {
+  color: gray;
+  display: none !important;
+}
+
+.menuDown,
+.menuDown > a {
+  color: darkgrey;
+  margin: 0;
+}
+
+header {
+  padding: 136px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header > .image-wrapper {
+  margin: 0 auto;
+}
+
+header > .image-wrapper > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+header > .headline-wrapper > h1,
+header > .headline-wrapper > h2,
+header > .headline-wrapper > h3,
+header > .headline-wrapper > p
+ {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.work-wrapper {
+  padding: 0px;
+}
+
+.work-wrapper > h1 {
+  text-align: center;
+}
+
+.work-wrapper > .portfolio-nav {
+  padding: 0;
+  margin: 0 auto 24px;
+  max-width: 69%;
+}
+
+.work-wrapper > .portfolio-nav > ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.work-wrapper > .portfolio-nav > ul > li {
+  text-align: center;
+  padding: 8px;
+  background-color: lightgray;
+  margin: 2px;
+  flex-grow: 1;
+  flex-basis: 40%;
+  transition: 300ms ease all;
+}
+
+.work-wrapper > .portfolio-nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.work-wrapper > .portfolio-nav > ul > li:hover {
+  background-color: darkgrey;
+}
+
+.work-wrapper > .portfolio-nav > ul > li > a:hover,
+.work-wrapper > .portfolio-nav > ul > li > a:active {
+  text-decoration: blink;
+  color: white;
+}
+
+.project-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 69%;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-card:last-of-type {
+  margin-bottom: 48px;
+}
+
+.project-image-frame {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+}
+
+.project-title-wrapper {
+  position: relative;
+  margin: 0 auto;
+  top: -24px;
+  background-color: white;
+  padding: 0;
+  display: inline-block;
+}
+
+.project-title-wrapper > h4 {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.project-description-wrapper {
+  position: relative;
+  top: -36px;
+  background-color: white;
+  padding: 0;
+  display: block;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image-wrapper {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.about-copy-wrapper {
+  position: relative;
+  margin: 0 36px;
+  top: -48px;
+  background-color: white;
+  padding: 16px;
+  display: inline-block;
+}
+
+.about-copy-wrapper > h2 {
+  margin: 0;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding-bottom: 96px;
+}
+
+.contact-wrapper > h2 {
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.contact-wrapper > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.contact-wrapper > ul > li {
+  padding: 8px;
+}
+
+.contact-wrapper > ul > li > a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+
+/* /PAGE STRUCTURE */
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 540px) {
+  .work-wrapper > .portfolio-nav > ul > li {
+    flex-basis: 0;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  h4 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+  
+  nav > .nav-menu > ul > li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav > .nav-menu > ul > li > a {
+    text-decoration: none;
+  }
+
+  .navToggle {
+    align-self: center;
+  }
+
+  header > .image-wrapper > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .headline-wrapper {
+    max-width: 72%;
+    margin: 0 auto;
+  }
+
+  .project-image-frame {
+    height: 330px;
+  }
+
+  .project-title-wrapper {
+    top: -40px;
+    padding: 16px 16px 0px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+  
+  h4 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+  
+  header > .image-wrapper > img,
+  .contact-wrapper > ul > li > a > .fa-3x {
+    transition: 600ms ease all;
+  }
+  
+  header > .image-wrapper > img:hover {
+    transform: translateY(-16px);
+    box-shadow: 8px 8px 8px darkgrey;
+  }
+
+  .headline-wrapper {
+    max-width: 44%;
+    margin: 0 auto;
+  }
+
+  .project-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 69%;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    margin: 24px;
+  }
+
+  .project-card:first-of-type {
+    margin-left: 0;
+  }
+
+  .project-card:last-of-type {
+    margin-right: 0;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 96px;
+    max-width: 70%;
+  }
+  
+  .about-image-wrapper {
+    width: 215%;
+    height: 500px;
+    background-size: cover;
+    flex-basis: auto;
+  }
+  
+  .about-copy-wrapper {
+    position: relative;
+    margin: 0;
+    top: -50%;
+    left: -72px;
+    background-color: white;
+    padding: 16px;
+    display: inline-block;
+  }
+  
+  .about-copy-wrapper > h2 {
+    margin: 0;
+  }
+
+  .contact-wrapper > ul > li > a > .fa-3x:hover {
+    color: gray;
+  }
+}
