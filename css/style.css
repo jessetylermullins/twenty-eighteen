@@ -298,6 +298,16 @@ header > .headline-wrapper > p {
   padding: 8px 16px;
 }
 
+.project-title-wrapper > h4 > a {
+  text-decoration: none;
+  color: gray;
+  transition: 300ms all ease;
+}
+
+.project-title-wrapper > h4 > a:hover {
+  color: lightskyblue;
+}
+
 .project-description-wrapper {
   position: relative;
   top: -36px;
