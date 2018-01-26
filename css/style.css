@@ -25,13 +25,13 @@
   }
 
   body {
-      margin: 0;
-      padding: 0;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 200;
-      font-size: 1em;
-      color: gray;
-      line-height: 1.75em;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: gray;
+    line-height: 1.75em;
   }
 
 /* /GLOBAL STYLES */
@@ -59,6 +59,15 @@ h3 {
 
 h4 {
   font-size: 1em;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  color: gray;
+  font-size: .8em;
+  margin: 8px auto;
+  padding: 0;
   text-align: center;
 }
 
@@ -197,8 +206,7 @@ header > .image-wrapper > img {
 header > .headline-wrapper > h1,
 header > .headline-wrapper > h2,
 header > .headline-wrapper > h3,
-header > .headline-wrapper > p
- {
+header > .headline-wrapper > p {
   text-align: center;
   margin-bottom: 24px;
 }
@@ -307,6 +315,7 @@ header > .headline-wrapper > p
   width: 100%;
   height: 300px;
   background-size: cover;
+  background-position: bottom-right;
 }
 
 .about-copy-wrapper {
@@ -342,6 +351,11 @@ header > .headline-wrapper > p
 
 .contact-wrapper > ul > li {
   padding: 8px;
+  background-color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
 .contact-wrapper > ul > li > a {
@@ -483,8 +497,8 @@ header > .headline-wrapper > p
   }
   
   .about-image-wrapper {
-    width: 215%;
-    height: 500px;
+    width: 300%;
+    height: 700px;
     background-size: cover;
     flex-basis: auto;
   }
@@ -495,7 +509,7 @@ header > .headline-wrapper > p
     top: -50%;
     left: -72px;
     background-color: white;
-    padding: 16px;
+    padding: 32px;
     display: inline-block;
   }
   
