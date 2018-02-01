@@ -354,7 +354,7 @@ header > .headline-wrapper > p {
 
 .contact-wrapper {
   margin: 0 auto;
-  padding-bottom: 96px;
+  padding: 96px 0px;
   background-color: transparent;
 }
 
