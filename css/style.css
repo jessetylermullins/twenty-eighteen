@@ -411,19 +411,54 @@ header > .headline-wrapper > p {
   p {
     font-size: 1.25em;
   }
-  
-  nav > .nav-menu > ul > li {
-    display: inline;
+
+  .navToggle {
+    display: none;
+  }
+
+  nav {
+    height: 96px;
+  }
+
+  nav > .nav-menu {
+    position: relative;
+    z-index: 0;
+    right: auto;
+    top: auto;
+    box-shadow: none;
+    flex-wrap: nowrap;
+  }
+
+  nav > .nav-menu > ul {
+    flex-wrap: nowrap;
     list-style: none;
     text-align: center;
+    justify-content: flex-end;
+  }
+
+  nav > .nav-menu > ul > li {
+    background-color: transparent;
+    width: auto;
   }
   
   nav > .nav-menu > ul > li > a {
     text-decoration: none;
+    color: darkgray;
+    font-size: 1.25em;
+    transition: 300ms all ease;
   }
 
-  .navToggle {
-    align-self: center;
+  nav > .nav-menu > ul > li > a:hover,
+  nav > .nav-menu > ul > li > a:active {
+    background-color: white;
+    color: gray;
+  }
+
+  .menuUp,
+  .menuDown > a {
+    display: inline !important;
+    color: darkgrey;
+    margin: 0;
   }
 
   header > .image-wrapper > img {
