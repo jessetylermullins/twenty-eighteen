@@ -35,6 +35,11 @@
     background-color: transparent;
   }
 
+  canvas {
+    position: fixed;
+    z-index: -1;
+  }
+
 /* /GLOBAL STYLES */
 
 /* TYPOGRAPHY */
