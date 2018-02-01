@@ -217,6 +217,11 @@ header > .headline-wrapper > p {
   margin-bottom: 24px;
 }
 
+.opaque-background {
+  background-color: white;
+  padding: 48px 0px;
+}
+
 .work-wrapper {
   padding: 0px;
 }
