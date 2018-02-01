@@ -32,7 +32,6 @@
     font-size: 1em;
     color: gray;
     line-height: 1.75em;
-    background-color: transparent;
   }
 
   canvas {
@@ -197,6 +196,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: transparent;
 }
 
 header > .image-wrapper {
@@ -350,6 +350,7 @@ header > .headline-wrapper > p {
 .contact-wrapper {
   margin: 0 auto;
   padding-bottom: 96px;
+  background-color: transparent;
 }
 
 .contact-wrapper > h2 {
@@ -377,6 +378,10 @@ header > .headline-wrapper > p {
 .contact-wrapper > ul > li > a {
   text-decoration: none;
   color: darkgray;
+}
+
+footer {
+  background-color: transparent;
 }
 
 
