@@ -1,5 +1,5 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS('particles-js', {
+particlesJS.load('particles-js', {
   "particles": {
     "number": {
       "value": 150,
