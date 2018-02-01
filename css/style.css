@@ -471,10 +471,6 @@ footer {
     margin: 0;
   }
 
-  header {
-    padding: 96px 48px 48px;
-  }
-
   header > .image-wrapper > img {
     width: 300px;
     height: 300px;
