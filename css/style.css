@@ -34,9 +34,11 @@
     line-height: 1.75em;
   }
 
-  canvas {
+  #particles-js {
     position: fixed;
     z-index: -1;
+    height: 100%;
+    width: 100%;
   }
 
 /* /GLOBAL STYLES */
