@@ -106,6 +106,10 @@ nav > .brandmark-wrapper {
   line-height: 0em;
 }
 
+nav > .brandmark-wrapper {
+  border: 2px solid transparent;
+}
+
 nav > .brandmark-wrapper > a > img {
   height: 48px;
   width: 48px;
@@ -115,6 +119,7 @@ nav > .brandmark-wrapper > a > img {
 .fa-ellipsis-v {
   color: darkgrey;
   transition: 300ms ease all;
+  padding-right: 16px;
 }
 
 .fa-ellipsis-v:hover,
@@ -197,6 +202,7 @@ nav > .nav-menu > ul > li:active, {
 
 header {
   padding: 48px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,12 +219,23 @@ header > .image-wrapper > img {
   border-radius: 50%;
 }
 
+.headline-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header > .headline-wrapper > h1,
 header > .headline-wrapper > h2,
 header > .headline-wrapper > h3,
 header > .headline-wrapper > p {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+}
+
+.fa-chevron-down {
+  margin: 16px auto;
+  transition: 600ms all ease;
 }
 
 .opaque-background {
@@ -358,7 +375,7 @@ header > .headline-wrapper > p {
 
 .contact-wrapper {
   margin: 0 auto;
-  padding: 96px 0px;
+  padding: 288px 0px;
   background-color: transparent;
 }
 
@@ -453,6 +470,12 @@ footer {
   nav > .nav-menu > ul > li {
     background-color: transparent;
     width: auto;
+    border: 2px solid transparent;
+    transition: 300ms all ease;
+  }
+
+  nav > .nav-menu > ul > li:hover {
+    border-bottom: 2px solid gray;
   }
   
   nav > .nav-menu > ul > li > a {
@@ -524,12 +547,16 @@ footer {
   
   header > .image-wrapper > img:hover {
     transform: translateY(-16px);
-    box-shadow: 8px 8px 8px darkgrey;
+    box-shadow: 2px 2px 8px darkgrey;
   }
 
   .headline-wrapper {
     max-width: 44%;
     margin: 0 auto;
+  }
+
+  .fa-chevron-down:hover {
+    transform: translateY(16px)
   }
 
   .project-card-wrapper {
