@@ -119,7 +119,6 @@ nav > .brandmark-wrapper > a > img {
 .fa-ellipsis-v {
   color: darkgrey;
   transition: 300ms ease all;
-  padding-right: 16px;
 }
 
 .fa-ellipsis-v:hover,
