@@ -8,6 +8,27 @@ $(document).ready(function() {
     });
 });
 
+/* Portfolio filter through an on click category selection */
+
+$(function() {
+  let selectedClass = "";
+  $(".filter-category").click(function() {
+    selectedClass = $(this).attr("data-rel");
+    $(this)
+      .siblings()
+      .removeClass("portfolio-selected");
+    $(this).addClass("portfolio-selected");
+    $("#portfolio").fadeTo(300, 0);
+    $("#portfolio div")
+      .not("." + selectedClass)
+      .fadeOut();
+    setTimeout(function() {
+      $("." + selectedClass).fadeIn();
+      $("#portfolio").fadeTo(300, 1);
+    }, 600);
+  });
+});
+
 /* particlesJS */
 
 particlesJS('particles-js', {
