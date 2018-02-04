@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#navToggle a").click(function(e){
         e.preventDefault();
 
-        $("#navMenu").toggleClass("menuUp menuDown");
+        $("#navMenu").toggleClass("menuUp").slideToggle(450);
     });
 });
 
@@ -81,7 +81,7 @@ particlesJS('particles-js', {
       "line_linked": {
         "enable": true,
         "distance": 115,
-        "color": "#555555",
+        "color": "#aaaaaa",
         "opacity": 0.4,
         "width": 1
       },

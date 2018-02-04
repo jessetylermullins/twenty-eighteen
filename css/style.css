@@ -92,7 +92,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 16px 32px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -127,7 +127,7 @@ nav > .brandmark-wrapper > a > img {
 }
 
 nav > .nav-menu {
-  display: flex;
+  display: none;
   flex-flow: row;
   flex-wrap: wrap;
   position: absolute;
@@ -190,13 +190,7 @@ nav > .nav-menu > ul > li:active, {
 
 .menuUp {
   color: gray;
-  display: none !important;
-}
-
-.menuDown,
-.menuDown > a {
-  color: darkgrey;
-  margin: 0;
+  display: flex;
 }
 
 header {
@@ -253,9 +247,9 @@ header > .headline-wrapper > p {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.25rem;
   position: sticky;
-  top: 96px;
+  top: 84px;
   background-color: gray;
   opacity: 0.95;
   z-index: 90;
@@ -267,22 +261,24 @@ header > .headline-wrapper > p {
   font-weight: normal;
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
   line-height: normal;
-  margin: 1rem 0.5rem;
+  margin: 0.5rem 0;
   height: auto;
   border: none;
   -webkit-appearance: none;
-  color: darkgray;
+  color: lightgray;
   background-color: transparent;
   transition: 300ms all ease;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-button:hover {
   text-decoration: none;
   color: white;
   background-color: darkgray;
+  outline: none;
+}
+
+.portfolio-button:focus {
   outline: none;
 }
 
@@ -329,9 +325,9 @@ header > .headline-wrapper > p {
   max-width: 100%;
   width: 100%;
   height: auto;
-  margin-bottom: 1rem;
   transition: 300ms all ease;
   overflow: hidden;
+  margin: 0.25rem 0;
 }
 
 .tile img:hover,
@@ -342,6 +338,8 @@ header > .headline-wrapper > p {
 .about-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .about-image-wrapper {
@@ -364,9 +362,14 @@ header > .headline-wrapper > p {
   margin: 0;
 }
 
+footer {
+  background-color: transparent;
+  height: 100vh;
+}
+
 .contact-wrapper {
   margin: 0 auto;
-  padding: 288px 0px;
+  padding: 50% 0px;
   background-color: transparent;
 }
 
@@ -385,11 +388,6 @@ header > .headline-wrapper > p {
 
 .contact-wrapper > ul > li {
   padding: 8px;
-  background-color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
 }
 
 .contact-wrapper > ul > li > a {
@@ -397,8 +395,8 @@ header > .headline-wrapper > p {
   color: darkgray;
 }
 
-footer {
-  background-color: transparent;
+.copyright-info {
+  padding-top: 5%;
 }
 
 
@@ -495,6 +493,14 @@ footer {
     margin: 0 auto;
   }
 
+  .portfolio-nav {
+    top: 96px;
+  }
+
+  .portfolio-button {
+    margin: 0.5rem 1rem;
+  }
+
   #portfolio {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -578,6 +584,10 @@ footer {
 
   .about-copy-wrapper {
     max-width: 60%;
+  }
+
+  .contact-wrapper {
+    padding: 20% 0px;
   }
 
   .contact-wrapper > ul > li > a > .fa-3x:hover {
