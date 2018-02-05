@@ -13,6 +13,7 @@
 
   * {
     box-sizing: border-box;
+    outline:none;
   }
 
   html {
@@ -216,14 +217,21 @@ header > .image-wrapper > img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 header > .headline-wrapper > h1,
 header > .headline-wrapper > h2,
 header > .headline-wrapper > h3,
 header > .headline-wrapper > p {
-  text-align: center;
   margin-bottom: 8px;
+}
+
+.click-to-scroll,
+.click-to-scroll:active,
+.click-to-scroll:visited {
+  color: gray;
 }
 
 .fa-chevron-down {
