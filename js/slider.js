@@ -1,34 +1,14 @@
 /* Slick.js Slider implementation */
 $(document).ready(function(){
-    $('.responsive').slick({
+    $('.gallery').slick({
     nextArrow: '',
     prevArrow: '',
-    appendArrows: '.responsive',
+    appendArrows: '.gallery',
     dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          appendArrows: ''
-        }
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          appendArrows: ''
-        }
-      }
-    ]
   });
-  });
+});
