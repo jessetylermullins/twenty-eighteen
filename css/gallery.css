@@ -4,6 +4,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .slider {
@@ -11,7 +12,6 @@
     margin: 0 auto;
     padding: 0 0 1em;
     position: relative;
-    background-color: white;
   }
   
   .slider:focus {
@@ -64,8 +64,7 @@
   }
 
   .description-wrapper {
-    background-color: white;
-    padding: 1em 1.5em 2em;;
+    padding: 1em 1.5em 2em;
   }
 
   h1 {
@@ -85,6 +84,8 @@
     outline: none;
     border: none;
     background-color: transparent;
+    padding: 0;
+    margin: 0;
   }
 
   button:focus {
@@ -95,10 +96,10 @@
     position: relative;
     overflow: hidden;
     border-radius: 0;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
   }
   a.animated-button:link:after, a.animated-button:visited:after {
     content: "";
@@ -108,10 +109,10 @@
     top: 50%;
     width: 150%;
     z-index: -1;
-    -webkit-transition: all 300ms ease 0s;
-    -moz-transition: all 300 s ease 0s;
-    -o-transition: all 300ms ease 0s;
-    transition: all 300ms ease 0s;
+    -webkit-transition: all 400ms ease 0ms;
+    -moz-transition: all 400ms ease 0ms;
+    -o-transition: all 400ms ease 0ms;
+    transition: all 400ms ease 0ms;
   }
   a.animated-button:link:hover, a.animated-button:visited:hover {
     color: #FFF;
@@ -123,7 +124,7 @@
   a.animated-button:link, a.animated-button:visited {
     position: relative;
     display: block;
-    margin: 30px auto 0;
+    margin: 30px 0 0;
     padding: 14px 15px;
     color: #fff;
     font-size:14px;
@@ -141,19 +142,19 @@
   }
 
   a.animated-button.document-link {
-    border: 1px solid grey;
+    border: 1px solid darkgrey;
     z-index: 0;
     display: inline-block;
-    color: grey;
+    color: darkgrey;
     font-family: 'Roboto Mono', sans-serif;
     font-weight: lighter;
   }
   a.animated-button.document-link:after {
-    background: grey;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(15deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(15deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(15deg);
-    transform: translateX(-50%) translateY(-50%) rotate(15deg);
+    background: darkgrey;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(12.5deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(12.5deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(12.5deg);
+    transform: translateX(-50%) translateY(-50%) rotate(12.5deg);
   }
 
 
@@ -169,25 +170,20 @@
       width: 100vw;
       min-height: 50vw;
       margin: 0 auto;
-      padding-bottom: 2em;
+      padding-bottom: 4em;
       display: flex;
-      flex-direction: row
+      flex-direction: row;
     }
 
     .slider {
-      width: 50vw;
+      width: 45vw;
     }
 
     .slick-slide {
-      min-height: 50vw;
-      max-height: 50vw;
-      min-width: 50vw;
-      max-width: 50vw;
-    }
-
-    .description-wrapper {
-      flex-grow: 1;
-      flex-basis: 50%;
+      min-height: 45vw;
+      max-height: 45vw;
+      min-width: 45vw;
+      max-width: 45vw;
     }
 
     footer {

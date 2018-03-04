@@ -108,10 +108,6 @@ nav > .brandmark-wrapper {
   line-height: 0em;
 }
 
-nav > .brandmark-wrapper {
-  border: 2px solid transparent;
-}
-
 nav > .brandmark-wrapper > a > img {
   height: 48px;
   width: 48px;
@@ -161,7 +157,7 @@ nav > .nav-menu > ul > li {
   align-content: center; 
   justify-content: center;
   width: 50%;
-  background-color: lightgrey;
+  background-color: darkgrey;
   border: 1px solid white;
 }
 
@@ -179,7 +175,7 @@ nav > .nav-menu > ul > li > a {
 nav > .nav-menu > ul > li > a:hover,
 nav > .nav-menu > ul > li > a:active,
 nav > .nav-menu > ul > li > a:focus {
-  background-color: darkgrey;
+  background-color: grey;
   color: white;
 }
 
@@ -256,7 +252,7 @@ header > .headline-wrapper > p {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5rem 0.25rem;
+  padding: 0;
   position: -webkit-sticky;
   position: sticky;
   top: 84px;
@@ -266,14 +262,13 @@ header > .headline-wrapper > p {
 }
 
 .portfolio-button {
-  font-family: Lato;
-  font-size: 1rem;
-  font-weight: normal;
+  font-family: 'Roboto Mono', sans-serif;
   text-decoration: none;
   cursor: pointer;
   line-height: normal;
-  margin: 0.5rem 0;
-  height: auto;
+  margin: 0;
+  padding: 1em;
+  height: 100%;
   border: none;
   -webkit-appearance: none;
   color: lightgray;
@@ -463,27 +458,22 @@ footer {
   }
 
   nav > .nav-menu > ul > li {
-    background-color: transparent;
+    background-color: white;
+    color: grey;
     width: auto;
-    border: 2px solid transparent;
     transition: 300ms all ease;
   }
 
   nav > .nav-menu > ul > li:hover {
-    border-bottom: 2px solid gray;
+    background-color: grey;
+    color: white;
   }
   
   nav > .nav-menu > ul > li > a {
     text-decoration: none;
-    color: darkgray;
+    color: darkgrey;
     font-size: 1.25em;
     transition: 300ms all ease;
-  }
-
-  nav > .nav-menu > ul > li > a:hover,
-  nav > .nav-menu > ul > li > a:active {
-    background-color: white;
-    color: gray;
   }
 
   .menuUp,
@@ -505,10 +495,6 @@ footer {
 
   .portfolio-nav {
     top: 96px;
-  }
-
-  .portfolio-button {
-    margin: 0.5rem 1rem;
   }
 
   #portfolio {
@@ -576,6 +562,10 @@ footer {
 
   .fa-chevron-down:hover {
     transform: translateY(16px)
+  }
+
+  nav > .nav-menu > ul > li {
+    border: none;
   }
 
   #portfolio {
