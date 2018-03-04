@@ -339,8 +339,8 @@ header > .headline-wrapper > p {
   margin: 0.25rem 0;
 }
 
-.tile img:hover,
-.tile img:focus {
+.tile:hover,
+.tile:focus {
   opacity: 0.5;
 }
 
