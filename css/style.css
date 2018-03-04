@@ -2,7 +2,7 @@
 
 /* FONT IMPORTS */
 
-@import url('https://fonts.googleapis.com/css?family=Bitter|Lato:300" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Lato:300|Roboto-Mono" rel="stylesheet');
 
 @import url('https://use.fontawesome.com/releases/v5.0.1/css/all.css');
 
@@ -40,6 +40,7 @@
     z-index: -1;
     height: 100%;
     width: 100%;
+    top: 0;
   }
 
 /* /GLOBAL STYLES */
