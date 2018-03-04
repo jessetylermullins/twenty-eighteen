@@ -34,14 +34,14 @@
   
   .slick-dots {
     padding: 1em 0 0;
-    margin: 0 20% 0;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .slick-dots > li {
     display: inline-block;
     font-size: .8em;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0 16px;
   }
   
   .slick-dots > li > button {
@@ -78,7 +78,93 @@
     font-weight: lighter;
   }
 
+
+  /* Button Styles */
+
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  button:focus {
+    outline:none;
+  }
+
+  a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+  }
+  a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 300ms ease 0s;
+    -moz-transition: all 300 s ease 0s;
+    -o-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+  }
+  a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+  }
+  a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+  }
+  a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+
+  a.animated-button.document-link {
+    border: 1px solid grey;
+    z-index: 0;
+    display: inline-block;
+    color: grey;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: lighter;
+  }
+  a.animated-button.document-link:after {
+    background: grey;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(15deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(15deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(15deg);
+    transform: translateX(-50%) translateY(-50%) rotate(15deg);
+  }
+
+
   @media only screen and (min-width: 768px) {
+    .slick-slide {
+      min-height: 50vh;
+      max-height: 50vh;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
     .portfolio-piece-container {
       width: 100vw;
       min-height: 50vw;
@@ -90,10 +176,10 @@
 
     .slider {
       width: 50vw;
-      background-color: transparent;
     }
 
     .slick-slide {
+      min-height: 50vw;
       max-height: 50vw;
       min-width: 50vw;
       max-width: 50vw;
@@ -105,10 +191,14 @@
     }
 
     footer {
-      height: 50vh;
+      max-height: 25vh;
     }
 
     .contact-wrapper {
-      padding: 12.5% 0;
+      padding: 2.5% 0;
+    }
+
+    .copyright-info {
+      padding: 0;
     }
   }
