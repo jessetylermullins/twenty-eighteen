@@ -30,6 +30,42 @@ $(function() {
 });
 
 
+/* Slick.js Slider implementation */
+$(document).ready(function(){
+  $('.responsive').slick({
+  nextArrow: '',
+  prevArrow: '',
+  appendArrows: '.responsive',
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        appendArrows: ''
+      }
+    },
+    {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        appendArrows: ''
+      }
+    }
+  ]
+});
+});
+
+
 /* Smooth Scrolling with Accessibility in mind */
 
 // Select all links with hashes
