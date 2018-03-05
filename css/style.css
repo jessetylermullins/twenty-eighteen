@@ -251,6 +251,7 @@ header > .headline-wrapper > p {
 
 .work-wrapper {
   padding: 0px;
+  min-height: 100px;
 }
 
 .portfolio-nav {
