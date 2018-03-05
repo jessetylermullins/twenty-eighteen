@@ -185,7 +185,7 @@ a.animated-button.document-link:after {
 @media only screen and (min-width: 1200px) {
   .portfolio-piece-container {
     width: 100vw;
-    min-height: 50vw;
+    min-height: 45vw;
     margin: 0 auto;
     padding-bottom: 4em;
     display: flex;
@@ -197,8 +197,8 @@ a.animated-button.document-link:after {
   }
 
   .slick-slide {
-    min-height: 50vw;
-    max-height: 50vw;
+    min-height: 80%;
+    max-height: 90vh;
     min-width: 50vw;
     max-width: 50vw;
   }
