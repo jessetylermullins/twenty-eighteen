@@ -512,6 +512,10 @@ footer {
     margin: 0 auto;
   }
 
+  .work-wrapper {
+    min-height: 350px;
+  }
+
   .portfolio-nav {
     top: 96px;
   }
@@ -583,6 +587,10 @@ footer {
     margin: 0 auto;
   }
 
+  .work-wrapper {
+    min-height: 400px;
+  }
+
   .fa-chevron-down:hover {
     transform: translateY(16px)
   }
@@ -619,6 +627,10 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) {
+  .work-wrapper {
+    min-height: 650px;
+  }
+  
   .about-wrapper {
     display: flex;
     flex-direction: row;
