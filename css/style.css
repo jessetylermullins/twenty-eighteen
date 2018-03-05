@@ -239,6 +239,11 @@ header > .headline-wrapper > p {
   transition: 600ms all ease;
 }
 
+#work {
+  position: absolute;
+  bottom: 0;
+}
+
 .opaque-background {
   background-color: white;
   padding: 0;
@@ -258,7 +263,7 @@ header > .headline-wrapper > p {
   padding: 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 84px;
+  top: 80px;
   background-color: gray;
   opacity: 0.95;
   z-index: 90;
@@ -277,6 +282,7 @@ header > .headline-wrapper > p {
   color: lightgray;
   background-color: transparent;
   transition: 300ms all ease;
+  font-size: 0.8em;
 }
 
 .portfolio-button:hover {
@@ -507,6 +513,10 @@ footer {
 
   .portfolio-nav {
     top: 96px;
+  }
+
+  .portfolio-button {
+    font-size: 1em;
   }
 
   #portfolio {
