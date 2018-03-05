@@ -64,71 +64,22 @@
 }
 
 .description-wrapper {
-  padding: 1em 1.5em 2em;
+  padding: 1em 4em 2em;
 }
-
-button.slick-arrow {
-  color: darkgrey;
-  background-color: transparent;
-  font-size: 1em;
-  border: none;
-  transition: 300ms all ease;
-  margin-top: 0;
-}
-
-button.slick-arrow:hover {
-  color: grey;
-}
-
-svg.fal-chevron-right > path {
-  transition: 300ms all ease;
-}
-
-svg.fa-chevron-right > path:hover {
-  filter: drop-shadow( -5px -5px 5px #000 );
-  transition: 300ms all ease;
-}
-
-svg.fal-chevron-left > path {
-  transition: 300ms all ease;
-}
-
-svg.fal-chevron-left > path:hover {
-  filter: drop-shadow( -5px -5px 5px #000 );
-  transition: 300ms all ease;
-}
-
-button.slick-prev {
-  display: inline-block;
-  position: relative;
-  margin: 0 16px 0 0;
-  padding: 0;
-  float: left;
-  text-align: center;
-}
-
-button.slick-next {
-  display: inline-block;
-  position: relative;
-  margin: 0 0 0 16px;
-  padding: 0;
-  float: right;
-  text-align: center;
-}
-
-.slick-prev:focus,
-.slick-next:focus {
-    outline: none;
-  }
 
 h1 {
   margin-top: 0;
-  font-size: 1.25em;
+  font-size: 1.75em;
+  line-height: 1.25em;
 }
 
 h2 {
   font-size: 1.125em;
   font-weight: lighter;
+}
+
+p {
+  font-size: 0.9em;
 }
 
 
@@ -217,12 +168,24 @@ a.animated-button.document-link:after {
     min-height: 50vh;
     max-height: 50vh;
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .portfolio-piece-container {
     width: 100vw;
-    min-height: 40vw;
+    min-height: 50vw;
     margin: 0 auto;
     padding-bottom: 4em;
     display: flex;
@@ -230,14 +193,35 @@ a.animated-button.document-link:after {
   }
 
   .slider {
-    width: 45vw;
+    width: 50vw;
   }
 
   .slick-slide {
-    min-height: 45vw;
-    max-height: 45vw;
-    min-width: 45vw;
-    max-width: 45vw;
+    min-height: 50vw;
+    max-height: 50vw;
+    min-width: 50vw;
+    max-width: 50vw;
+  }
+
+  .slick-dots {
+    top: -4em;
+    position: relative;
+  }
+
+  .slick-dots > li > button {
+    border: 2px solid black;
+    background-color: black;
+    opacity: 0.2;
+  }
+  
+  .slick-dots > li.slick-active > button {
+    border: 2px solid black;
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .description-wrapper {
+    margin-right: 3em;
   }
 
   h1 {
