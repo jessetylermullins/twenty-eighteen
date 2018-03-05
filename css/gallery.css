@@ -222,7 +222,7 @@ a.animated-button.document-link:after {
 @media only screen and (min-width: 1200px) {
   .portfolio-piece-container {
     width: 100vw;
-    min-height: 50vw;
+    min-height: 40vw;
     margin: 0 auto;
     padding-bottom: 4em;
     display: flex;
