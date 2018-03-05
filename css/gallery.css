@@ -197,7 +197,7 @@ a.animated-button.document-link:after {
   }
 
   .slick-slide {
-    min-height: 80%;
+    min-height: 90vh;
     max-height: 90vh;
     min-width: 50vw;
     max-width: 50vw;
